@@ -1,0 +1,19 @@
+{{#if items}}
+    <div class="banner-middle">
+        <div id="{{id}}" class="banner group {{style}}">
+        {{#each items}}
+            {{#if link}}
+                <a href="{{link}}" class="item {{style}}">
+                {{#if img}}
+                    <img src="{{ img img }}">
+                {{else}}
+                    {{label}}
+                {{/if}}
+                </a>
+            {{else}}
+                <img src="{{ img img }}" class="item {{style}}">
+            {{/if}}
+        {{/each}}
+        </div>
+    </div>
+{{/if}}

@@ -1,0 +1,34 @@
+.slider-wrapper
+    position: relative
+
+.slider
+    overflow: hidden
+    position: relative
+    margin: 0 $u*5
+
+    .item
+        float: left
+        padding: 0 $u*2
+        visibility: hidden
+
+    &.built
+        .item
+            visibility: visible
+
+.slider-controls__item
+    color: $c-red
+    cursor: pointer
+    position: absolute
+    top: 50%
+    font-size: 40px
+    margin-top: -0.65em
+    +user-select
+
+    &:hover
+        color: tint($c-red, 20)
+
+    &.prev-slide
+        left: -0.2em
+
+    &.next-slide
+        right: -0.2em

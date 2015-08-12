@@ -1,0 +1,63 @@
+<footer class="main-footer width-limiter">
+    <div class="grid">
+        <div class="g-1-3">
+            <h3 class="heading separator small">Realização</h3>
+
+            <ul class="row reset-list">
+                {{#each footer.realizadores}}
+                <li class="item">
+                    <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="g-1-3">
+            <h3 class="heading separator small">Organização</h3>
+
+            <ul class="row reset-list">
+                {{#each footer.organizadores}}
+                <li class="item">
+                    <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="g-1-3">
+            <h3 class="heading separator small">Rede Social</h3>
+
+            <ul class="row reset-list">
+                {{#each footer.redesocial}}
+                <li class="item">
+                    <a href="{{ link }}" target="_blank">
+                        <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="heading separator">Patrocínio</h3>
+
+    <ul class="row reset-list grid">
+        {{#each footer.patrocinio}}
+        <li class="item g-1-3">
+            <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
+        </li>
+        {{/each}}
+    </ul>
+
+    <h3 class="heading separator">Apoio</h3>
+
+    <ul class="row small reset-list">
+        {{#each footer.apoio}}
+        <li class="item">
+            <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
+        </li>
+        {{/each}}
+    </ul>
+
+    <p class="copyright"><em>Corrida Jovem Pan Londrina &copy;</em> Todos os direitos reservados</p>
+</footer>

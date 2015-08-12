@@ -1,0 +1,92 @@
+.main-header
+    padding-top: $u*5
+    border-bottom: $u*3 solid $c-orange
+    @include linear-gradient(to top, #e8e8e8, #fff)
+
+    > .group
+        margin-bottom: -$u*10 + 3
+
+        +breakpoint(medium)
+            margin-bottom: 0
+
+    .logo, .row
+        float: left
+
+        +breakpoint(medium)
+            float: none
+
+    .logo
+        margin: 0 $u*2 0 (-$u*2)
+
+        +breakpoint(medium)
+            margin: auto
+            text-align: center
+
+    img
+        +breakpoint(medium)
+            display: block
+            margin: auto
+
+    .row
+        width: 960px - 270px
+
+        +breakpoint(medium)
+            width: auto
+            padding: $u*2
+            text-align: center
+
+        &.first
+            border-bottom: 2px dotted $c-blue
+            padding: $u*2 0 $u*3
+
+    .button-pill
+        +breakpoint(medium)
+            display: inline-block
+
+    .info
+        color: $c-blue
+        font-size: 28px
+        padding-left: $u*5
+        text-transform: uppercase
+        font-weight: 700
+
+        +breakpoint(medium)
+            display: block
+            margin-top: $u*2
+
+    .banner
+        background: image('flag.png') no-repeat center right
+        font-weight: 700
+        margin: $u + 3 0 $u*2 + 2
+        padding-left: $u*2
+        min-height: 80px
+        text-transform: uppercase
+
+        +breakpoint(medium)
+            background: none
+            margin: $u 0
+            padding: 0
+
+    .banner-heading, .banner-info
+        margin: 0
+
+    .banner-heading
+        color: #ec7e00
+        padding-top: $u*2
+        font-size: 50px
+
+        +breakpoint(medium)
+            font-size: 40px
+
+        em
+            color: $c-blue
+            font-style: normal
+
+    .banner-info
+        color: $c-red
+        font-size: 33px
+        margin-top: -$u + 2
+
+        +breakpoint(medium)
+            font-size: 14px
+            margin: 0

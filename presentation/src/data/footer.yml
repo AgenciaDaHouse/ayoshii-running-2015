@@ -1,0 +1,57 @@
+realizadores:
+    -   label: Jovem Pan
+        img: jovem-pan.png
+
+organizadores:
+    -   label: Capa
+        img: capa.png
+
+redesocial:
+    -   label: Facebook
+        img: facebook.png
+        link: http://www.facebook.com/corridajovempanlondrina
+        ref: facebook
+
+patrocinio:
+    -   label: Rhio
+        img: rhio.png
+
+    -   label: Café Itamaraty
+        img: cafe-itamaraty.png
+
+    -   label: Vectra
+        img: vectra.png
+
+apoio:
+    -   label: Filmes do Leste
+        img: leste.png
+
+    -   label: RIC Record
+        img: ric-tv.png
+
+    -   label: W2 Digital
+        img: w2.png
+
+    -   label: IHEL
+        img: ihel.png
+
+    -   label: Unimed
+        img: unimed.png
+
+    -   label: Natu
+        img: natu.png
+
+    -   label: Fundação de Esportes de Londrina
+        img: fundacao.png
+
+    -   label: Gatorade
+        img: gatorade.png
+
+    -   label: Unopar
+        img: unopar.png
+
+    -   label: DaHouse Comunicação
+        img: dahouse.png
+
+    -   label: Copa Agrícola
+        img: copa.png

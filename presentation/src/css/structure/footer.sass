@@ -1,0 +1,95 @@
+.main-footer
+    padding-top: $u*3
+    color: #fff
+    text-align: center
+
+    +breakpoint(medium)
+        padding: $u*4 $u*2 0
+
+    .heading
+        font-size: 20px
+        text-transform: uppercase
+
+    .separator
+        position: relative
+
+        &:before, &:after
+            border-top: $b
+            content: ''
+            display: block
+            position: absolute
+            top: 50%
+            @include size(41% 1px)
+
+            +breakpoint(medium)
+                width: 26%
+
+        &:after
+            right: 0
+
+        &.small
+            &:before, &:after
+                width: 30%
+
+    .g-1-2,
+    .g-1-3
+        vertical-align: top
+
+    .item
+        display: inline-block
+        padding: $u*2 $u*6
+        vertical-align: middle
+
+        +breakpoint(medium)
+            display: block
+            padding: $u*2
+
+    img
+        +breakpoint(medium)
+            display: block
+            max-width: 100%
+            margin: auto
+
+        &.facebook
+            padding: $u*4
+
+    .row
+        padding: $u*5 0
+
+        &:first-child
+            border-top: $b
+
+        &.small
+            margin: 0 (-$u*6)
+
+            +breakpoint(medium)
+                margin: 0
+
+            .item
+                padding: $u*6 0
+                width: 25%
+
+                &:nth-child(n+9)
+                    width: 33%
+
+                    +breakpoint(medium)
+                        width: 100%
+
+                +breakpoint(medium)
+                    width: 100%
+
+    .copyright
+        background: #003468
+        border-radius: 10px 10px 0 0
+        font-size: 28px
+        font-weight: 700
+        padding: $u*8 0 $u*10
+        margin: $u 0 0
+
+        +breakpoint(medium)
+            font-size: 16px
+            padding: $u*4 $u*2
+
+        em
+            font-style: normal
+            text-transform: uppercase

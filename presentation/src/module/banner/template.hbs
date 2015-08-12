@@ -1,0 +1,11 @@
+<nav class="banner--nav {{navPosition}}">
+    <ul class="items reset">
+    {{#times total}}
+        <li class="item" data-index="{{this}}">{{ add this 1 ../withZero }}</li>
+    {{/times}}
+
+    {{#if nextButton}}
+        <li class="item icon icon-play" data-action="nextItem"></li>
+    {{/if}}
+    </ul>
+</nav>

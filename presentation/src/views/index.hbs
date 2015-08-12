@@ -1,0 +1,54 @@
+---
+title: Home
+isRoot: true
+style: home
+script: index
+
+banner:
+    id: banner-main
+    style: interactive
+    items:
+        -   img: banners/home-2.png
+        -   img: banners/home-3.png
+---
+
+<h3 class="section-subheading">A Prova</h3>
+
+<section class="group">
+    <span class="event left">
+        <p class="info">Com provas de 3km (1 volta) 6km (2 voltas) e 9km (3 voltas) no percurso do Autódromo Ayrton Senna, a corrida contará com público previsto de 1.000 atletas. O evento será realizado no dia 07 de Junho com largada as 8h30.</p>
+
+        <figure class="figure">
+            <img src="{{ img 'banners/autodromo.jpg' }}">
+        </figure>
+    </span>
+
+    <a class="event right" href="kit.html">
+        <img src="{{ img 'banners/corrida.png' }}">
+    </a>
+</section>
+
+<figure class="figure">
+    <img src="{{ img 'banners/circuito.jpg' }}">
+</figure>
+
+{{!-- <h3 class="section-subheading">Galeria</h3>
+
+<div class="slider-wrapper">
+    <div id="slider" class="slider">
+        <ul id="gallery" class="items reset-list group">
+            {{#each carrossel}}
+            <li class="item">
+                <a href="/img/evento/zoom/{{ this }}.jpg" class="link">
+                    <img src="/img/evento/thumb/{{ this }}.jpg" width="160">
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="controls slider-controls">
+        <span class="prev-slide slider-controls__item">❮</span>
+        <span class="next-slide slider-controls__item">❯</span>
+    </div>
+</div> --}}

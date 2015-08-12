@@ -1,0 +1,13 @@
+<nav class="row main-nav" id="main-nav">
+    <ul class="items reset-list group">
+        {{#each nav.items}}
+        <li class="item">
+            {{#if unpublished}}
+            <span class="link" title="{{label}}">{{label}}<span class="tooltip">em breve</span></span>
+            {{else}}
+            <a href="{{link}}" class="link {{ active ../../title label }}" title="{{label}}" target="{{target}}">{{label}}</a>
+            {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+</nav>

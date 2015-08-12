@@ -1,0 +1,36 @@
+// clearfix
+.group
+    @include clearfix
+
+// resets
+%reset
+    margin: 0
+    padding: 0
+
+.reset
+    @extend %reset
+
+.reset-list
+    list-style: none
+    @extend %reset
+
+textarea
+    resize: vertical
+
+// inline block
+.inline-middle
+    display: inline-block
+    vertical-align: middle
+
+.inline-top
+    display: inline-block
+    vertical-align: top
+
+// text
+.hide-text
+    @include hide-text
+
+// dimensions
+.width-limiter
+    max-width: 960px
+    margin: auto

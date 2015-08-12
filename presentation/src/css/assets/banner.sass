@@ -1,0 +1,16 @@
+.banner
+    position: relative
+
+    .item
+        +breakpoint(medium)
+            width: 100%
+
+    &.interactive
+        +breakpoint(medium)
+            display: none
+
+        > .item
+            display: none
+
+            &:first-child
+                display: block

@@ -1,0 +1,25 @@
+items:
+    -   label: 'Home'
+        link: '/'
+
+    -   label: 'Evento'
+        link: '/evento.html'
+
+    -   label: 'Kit'
+        link: '/kit.html'
+
+    -   label: 'Percurso'
+        link: '/percurso.html'
+
+    -   label: 'Regulamento'
+        link: '/regulamento.html'
+
+    -   label: 'Galeria'
+        link: '/galeria.html'
+
+    -   label: 'Resultados'
+        link: 'http://www.timerace.com.br/corrida-jovem-pan-2015'
+        target: '_blank'
+
+    -   label: 'Contato'
+        link: '/contato.html'

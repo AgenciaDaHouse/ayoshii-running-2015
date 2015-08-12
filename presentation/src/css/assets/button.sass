@@ -1,0 +1,36 @@
+.button-pill
+    border: none
+    border-radius: $u*2
+    display: inline-block
+    padding: $u*2 $u*3 $u + 2
+    font-weight: 700
+    font-size: 28px
+    line-height: 1
+    text-decoration: none
+    text-transform: uppercase
+    text-shadow: 0 -1px 1px rgba(0,0,0,.15)
+    transition: 0.2s
+
+    @mixin color($type, $color1, $color2, $color-text)
+        &.#{$type}
+            box-shadow: 0 0 4px 1px $color2 inset
+            color: $color-text
+            @include linear-gradient($color1, $color2 45%)
+
+    @include color('blue', tint($c-blue, 60%), $c-blue, #fff)
+
+    &:hover
+        transform: scale(1.05)
+
+.button-flat
+    border: 1px solid $c-blue
+    background: none
+    color: $c-blue
+    font-size: 16px
+    padding: $u $u*2
+    text-transform: uppercase
+    transition: all $t
+
+    &:active
+        background: tint($c-blue, 85)
+        border-color: shade($c-blue, 20)

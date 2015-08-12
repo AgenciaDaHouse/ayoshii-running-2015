@@ -1,0 +1,101 @@
+@import ../../css/shared/_
+
+$banner-transition: 0.2s ease-out
+
+.banner--items
+
+    .item
+        display: none
+
+    .show
+        display: block
+        position: relative
+        z-index: 1
+        @include animation(show .6s $ease-out-back)
+
+        img
+            display: block
+
+    .init
+        display: block
+        @include animation(none)
+
+    .last
+        position: absolute
+        z-index: 0
+        opacity: 0
+        top: 0
+        @include animation(hide .6s $ease-out-back)
+
+@include keyframes(show)
+    from
+        opacity: 0
+        transform: scale(1.25)
+
+    to
+        opacity: 1
+        transform: none
+
+@include keyframes(hide)
+    from
+        opacity: 1
+        transform: none
+
+    to
+        opacity: 0
+        transform: scale(0.85)
+
+.banner--nav
+    $c: $c-yellow
+    $br: 3px
+
+    background: shade($c-blue, 15)
+    box-shadow: 0 1px 2px rgba(0,0,0,.5)
+    border-radius: 3px
+    padding: 2px
+    position: absolute
+    opacity: .5
+    z-index: 1
+    transition: opacity $banner-transition
+
+    +breakpoint(medium)
+        background: none
+        box-shadow: none
+
+    .banner:hover &
+        opacity: 1
+
+        .item
+            padding-left: $u - 1
+            padding-right: $u - 1
+
+    &.right-top
+        right: 0
+        top: $u
+
+    .items
+        list-style: none
+
+    .item
+        color: #fff
+        cursor: pointer
+        border-radius: 2px
+        font: 12px/1 $f-sans
+        padding: 3px 4px
+        margin-top: 1px
+        text-shadow: 0 1px 1px rgba(0,0,0,.5)
+        text-align: center
+        transition: all $banner-transition
+        @include user-select(none)
+
+        &:first-child
+            margin-top: 0
+
+    .icon
+        padding: 4px 1px 2px
+
+    .active
+        background: $c
+        color: $c-blue
+        cursor: default
+        text-shadow: 0 1px 0 #fff

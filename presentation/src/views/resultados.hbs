@@ -1,0 +1,18 @@
+---
+title: Resultados
+script: main
+---
+
+<h1 class="section-heading">Resultados</h1>
+
+<section class="content-area">
+    <pre>
+        <strong>Resultados</strong>
+        {{#each resultados}}
+        <a href='/downloads/resultados/{{ this }}.pdf' target='_blank'>{{ this }}</a>{{/each}}
+
+        <strong>Premiação</strong>
+        {{#each premiacao}}
+        <a href='/downloads/premiacao/{{ this }}.pdf' target='_blank'>{{ this }}</a>{{/each}}
+    </pre>
+</section>

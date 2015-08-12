@@ -1,0 +1,58 @@
+---
+title: Contato
+style: contato
+script: main
+---
+
+<h1 class="section-heading">Contato</h1>
+
+<section class="content-area">
+    <h2 class="heading">Dúvidas? Teremos prazer em atendê-lo:</h2>
+    <p class="text large">Tel.: 43 3026 4534 | email: <a href="mailto:contato@capapromo.com.br">contato@capapromo.com.br</a></p>
+
+    <section class="grid content">
+        <div class="g-1-2">
+            <p class="text large greeting">Ou você pode nos contactar através do formulário ao lado. Em breve iremos retorná-lo!</p>
+        </div>
+
+        <form action="/server/enviar.php" class="form g-1-2">
+            <label class="row grid">
+                <span class="label g-1-4">Nome:</span>
+                <input type="text" class="field g-3-4" name="nome" title="Escreva seu nome" required>
+            </label>
+
+            <label class="row grid">
+                <span class="label g-1-4">E-mail:</span>
+                <input type="text" class="field g-3-4" name="email" title="Escreva seu email" required>
+            </label>
+
+            <label class="row grid">
+                <span class="label g-1-4">Cidade:</span>
+                <input type="text" class="field g-3-4" name="cidade">
+            </label>
+
+            <label class="row grid">
+                <span class="label g-1-4">Telefone:</span>
+                <input type="text" class="field g-3-4" name="telefone">
+            </label>
+
+            <label class="row grid">
+                <span class="label g-1-4">Endereço:</span>
+                <input type="text" class="field g-3-4" name="endereco">
+            </label>
+
+            <label class="row grid">
+                <span class="label g-1-4">Mensagem:</span>
+                <textarea class="field g-3-4" name="mensagem" title="Escreva sua mensagem" required></textarea>
+            </label>
+
+            <div class="row grid">
+                <div class="g-1-4"></div>
+                <div class="g-3-4">
+                    <button class="button-flat" type="submit">Enviar</button>
+                    <button class="button-flat" type="reset">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</section>

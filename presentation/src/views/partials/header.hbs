@@ -1,0 +1,27 @@
+<nav id="mobile-nav" class="main-nav is-mobile"></nav>
+
+<header class="main-header">
+    <div class="width-limiter group">
+        {{#if isRoot}}
+        <h1 class="logo reset">
+            <img src="{{ img 'ui/logo.png' }}" alt="Corrida Jovem Pan Londrina">
+        </h1>
+        {{else}}
+        <a href="/" class="logo" title="Home">
+            <img src="{{ img 'ui/logo.png' }}" alt="Corrida Jovem Pan Londrina">
+        </a>
+        {{/if}}
+
+        <div class="row first">
+            <a href="http://www.euvoueuvou.com.br/eventos/ver/97/2-corrida-jovem-pan-londrina/" target="_blank" class="button-pill blue">Inscreva-se aqui</a>
+            <span class="info">Inscrições até dia 03 de Junho</span>
+        </div>
+
+        <div class="row banner">
+            <h2 class="banner-heading"><em>Londrina -</em> dia: 07 de Junho</h2>
+            <p class="banner-info">Autódromo Internacional Ayrton Senna</p>
+        </div>
+
+        {{> nav }}
+    </div>
+</header>

@@ -1,0 +1,52 @@
+.main-nav
+    $color: $c-orange
+
+    box-shadow: 0 0 4px 1px $c-orange inset
+    text-align: center
+    @include linear-gradient(tint($color, 35%), $color)
+
+    +breakpoint(medium)
+        text-align: left
+        display: none
+
+    &.is-mobile
+        +breakpoint(medium)
+            display: block
+
+    .item
+        display: inline-block
+        padding: $u * 3 - 1 $u $u * 3 - 2
+
+        +breakpoint(medium)
+            display: block
+            padding: $u
+
+    .link
+        color: #fff
+        font-size: 19px
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.2)
+        transition: color $t
+
+        &:hover:not(.active):not(span)
+            color: #ff0
+
+    span.link
+        cursor: not-allowed
+
+    .active
+        font-weight: 700
+        cursor: default
+
+    .tooltip
+        color: #333
+        position: absolute
+        background: $c-yellow
+        padding: $u - 2 $u
+        text-transform: uppercase
+        top: -$u*3
+        left: -$u*2 + 1
+        white-space: nowrap
+        font-size: 9px

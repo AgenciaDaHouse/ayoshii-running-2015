@@ -1,0 +1,145 @@
+.main-content
+    padding-top: $u*8
+    margin-bottom: $u*10
+
+    &.inner
+        padding-top: $u*12
+
+        +breakpoint(medium)
+            padding-top: 0
+
+    +breakpoint(medium)
+        margin-bottom: $u*2
+        padding: 0 $u*2
+
+    .banner-middle
+        padding: $u 0
+        margin: $u*3 0 $u*6
+        text-align: center
+
+        img
+            +breakpoint(medium)
+                display: block
+                margin: auto
+                width: 100%
+
+        .home &
+            margin: $u*5 0 $u*8
+
+            +breakpoint(medium)
+                margin: 0
+                padding: 0
+
+.content-area
+    background: #fff
+    border-radius: $u*2
+    color: $c-blue
+    padding: $u*5
+    position: relative
+    width: 670px
+    float: right
+    margin-top: -$u*18
+    min-height: 50px
+
+    +breakpoint(medium)
+        float: none
+        width: auto
+        margin-top: 0
+        padding: $u*2
+
+    .pos-left
+        float: left
+
+    .pos-right
+        float: right
+
+    .separator-bottom
+        border-bottom: 2px dotted $c-blue
+
+    .heading, .text, .list
+        font-style: italic
+
+    .heading
+        margin-top: 0
+        font-size: 26px
+        text-decoration: underline
+
+        .simple
+            font-style: normal
+            text-decoration: none
+            font-weight: 300
+
+        + .sub-heading
+            margin-top: -$u*4
+
+    .sub-heading
+        font-size: 20px
+        font-weight: 300
+        line-height: 1.2em
+
+    .text
+        font-size: 18px
+        font-weight: 300
+        line-height: 1.4em
+
+        +breakpoint(medium)
+            font-size: 16px
+
+        &:last-child
+            margin-bottom: 0
+
+        &.large
+            font-size: 22px
+            line-height: 26px
+
+        &.no-margin
+            margin-top: 0
+
+        a
+            color: $c-orange
+            text-decoration: none
+
+            &:hover
+                text-decoration: underline
+
+    .list
+        font-size: 22px
+        line-height: 1.2em
+
+        &.spaced
+            margin-top: $u*4
+
+        +breakpoint(medium)
+            font-size: 16px
+
+        li
+            margin-top: $u*2
+
+        strong
+            font-style: normal
+
+    ul.list
+        list-style: inside disc
+
+        &.null
+            list-style: none
+
+    ol.list
+        list-style: inside decimal
+
+    pre
+        font-family: $f-sans
+        line-height: 1.4em
+
+    table
+        width: 100%
+
+        th, td
+            border: 1px solid tint($c-blue, 50)
+            padding: $u $u*2
+
+        th
+            background: tint($c-blue, 85)
+
+        td:first-child
+            text-align: center

@@ -1,0 +1,91 @@
+.contato
+    .content
+        margin: $u*6 0
+
+        > .g-1-2
+            vertical-align: top
+
+    .greeting
+        margin-top: 0
+        padding-right: $u*10
+
+    .form
+        padding-right: $u*8
+
+        +breakpoint(medium)
+            padding: $u*4 0 0
+
+.percurso
+    .figure
+        $p: -$u*6
+        margin: $p $p $p 0
+
+        +breakpoint(medium)
+            margin: 0 0 $u*4
+
+        img
+            +breakpoint(medium)
+                display: block
+                width: 100%
+                margin: auto
+
+.revesamento, .prova
+    .figure
+        $p: -$u*6
+        margin: $p $p $u*2 $u*2
+
+.revezamento
+    .text
+        line-height: 2rem
+
+.home
+    .figure
+        img
+            +breakpoint(medium)
+                width: 100%
+
+    .event.left
+        float: left
+        width: 400px
+
+        +breakpoint(medium)
+            float: none
+            width: 100%
+
+    .event.right
+        float: right
+        margin-top: -$u*3
+        width: 50%
+
+        +breakpoint(medium)
+            float: none
+            width: 100%
+            display: block
+
+        img
+            display: block
+            margin-bottom: -$u*4
+
+    .event
+        text-decoration: none
+        margin-bottom: $u*4
+
+        .info
+            color: #fff
+            font-size: 16px
+            line-height: 1.4em
+            margin-top: $u*3
+
+.inscricao
+    iframe
+        margin: 0 (-$u*4)
+        @include size(710px 430px)
+
+.kit
+    .camisa
+        margin: 0 (-$u*18) 0 (-$u*6)
+
+        +breakpoint(medium)
+            margin: 0
+            display: block
+            width: 100%

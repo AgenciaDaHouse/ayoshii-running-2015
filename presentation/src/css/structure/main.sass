@@ -1,0 +1,11 @@
+body
+    background: $c-blue
+    font-family: $f-sans
+    line-height: 1
+
+    +breakpoint(medium)
+        background-image: none
+
+.main-wrapper
+    overflow: hidden
+    @include linear-gradient(to bottom, #337ec0, $c-blue 750px)
