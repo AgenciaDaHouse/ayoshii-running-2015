@@ -1,9 +1,6 @@
 .main-nav
-    $color: $c-orange
-
-    box-shadow: 0 0 4px 1px $c-orange inset
+    background: $c-orange
     text-align: center
-    @include linear-gradient(tint($color, 35%), $color)
 
     +breakpoint(medium)
         text-align: left
@@ -15,7 +12,7 @@
 
     .item
         display: inline-block
-        padding: $u * 3 - 1 $u $u * 3 - 2
+        padding: $u*2
 
         +breakpoint(medium)
             display: block
@@ -23,7 +20,8 @@
 
     .link
         color: #fff
-        font-size: 19px
+        font-size: 18px
+        line-height: 1.5
         position: relative
         text-transform: uppercase
         text-decoration: none
@@ -41,9 +39,10 @@
         cursor: default
 
     .tooltip
-        color: #333
+        color: #fff
+        border-radius: 5rem
         position: absolute
-        background: $c-yellow
+        background: $c-blue
         padding: $u - 2 $u
         text-transform: uppercase
         top: -$u*3

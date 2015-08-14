@@ -1,7 +1,7 @@
 <?php
 
 $to = 'contato@capapromo.com.br';
-$subject = 'Contato - Corrida Jovem Pan Londrina';
+$subject = 'Contato - A.Yoshii Running 2015';
 
 $data =  '<b>Nome</b>: ' . $_GET['nome'] . '<br>';
 $data .= '<b>Email</b>: ' . $_GET['email'] . '<br>';

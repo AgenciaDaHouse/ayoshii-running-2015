@@ -16,10 +16,12 @@ items:
 
     -   label: 'Galeria'
         link: '/galeria.html'
+        unpublished: true
 
     -   label: 'Resultados'
-        link: 'http://www.timerace.com.br/corrida-jovem-pan-2015'
+        link: ''
         target: '_blank'
+        unpublished: true
 
     -   label: 'Contato'
         link: '/contato.html'
