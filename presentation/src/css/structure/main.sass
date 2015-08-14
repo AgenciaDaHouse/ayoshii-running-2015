@@ -1,5 +1,5 @@
 body
-    background: $c-blue
+    background: $c-bg
     font-family: $f-sans
     line-height: 1
 
@@ -7,5 +7,5 @@ body
         background-image: none
 
 .main-wrapper
+    +linear-gradient(to top, $c-bg, #fff 750px)
     overflow: hidden
-    @include linear-gradient(to bottom, #337ec0, $c-blue 750px)
