@@ -2,24 +2,37 @@
 
 <header class="main-header">
     <div class="width-limiter group">
-        {{#if isRoot}}
-        <h1 class="logo reset">
-            <img src="{{ img 'ui/logo.png' }}" alt="A.Yoshii Running 2015">
-        </h1>
-        {{else}}
-        <a href="/" class="logo" title="Home">
-            <img src="{{ img 'ui/logo.png' }}" alt="A.Yoshii Running 2015">
-        </a>
-        {{/if}}
+        <div class="grid">
+            <div class="g-1-3">
+                {{#if isRoot}}
+                <h1 class="logo reset">
+                    <img src="{{ img 'ui/logo.png' }}" alt="A.Yoshii Running 2015">
+                </h1>
+                {{else}}
+                <a href="/" class="logo" title="Home">
+                    <img src="{{ img 'ui/logo.png' }}" alt="A.Yoshii Running 2015">
+                </a>
+                {{/if}}
+            </div>
 
-        <div class="row first">
-            <a href="http://www.euvoueuvou.com.br/eventos/ver/97/2-corrida-jovem-pan-londrina/" target="_blank" class="button-pill blue">Inscreva-se aqui</a>
-            <span class="info">Inscrições até dia 03 de Junho</span>
-        </div>
+            <div class="g-2-3">
+                <div class="grid sign-up">
+                    <div class="g-1-2">
+                        <a href="http://www.euvoueuvou.com.br/eventos/ver/97/2-corrida-jovem-pan-londrina/" target="_blank" class="button-pill orange">Inscrições <strong>Londrina</strong></a>
+                        <p class="info">Até 30/09</p>
+                    </div>
 
-        <div class="row banner">
-            <h2 class="banner-heading"><em>Londrina -</em> dia: 07 de Junho</h2>
-            <p class="banner-info">Autódromo Internacional Ayrton Senna</p>
+                    <div class="g-1-2">
+                        <a href="http://www.euvoueuvou.com.br/eventos/ver/97/2-corrida-jovem-pan-londrina/" target="_blank" class="button-pill orange">Inscrições <strong>Maringá</strong></a>
+                        <p class="info">Até 03/11</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="banner-heading"><em>Londrina:</em> 04 de outubro</h2>
+                    <h2 class="banner-heading"><em>Maringá:</em> 07 de novembro</h2>
+                </div>
+            </div>
         </div>
     </div>
 </header>

@@ -4,7 +4,7 @@
     display: inline-block
     padding: $u*2 $u*3 $u + 2
     font-weight: 700
-    font-size: 28px
+    font-size: 18px
     line-height: 1
     text-decoration: none
     text-transform: uppercase
@@ -17,7 +17,8 @@
             color: $color-text
             @include linear-gradient($color1, $color2 45%)
 
-    @include color('blue', tint($c-blue, 60%), $c-blue, #fff)
+    $color: #f59d38
+    @include color('orange', tint($color, 60%), $color, #fff)
 
     &:hover
         transform: scale(1.05)

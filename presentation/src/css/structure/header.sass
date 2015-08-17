@@ -1,91 +1,37 @@
 .main-header
-    padding-top: $u*5
-    @include linear-gradient(to top, #e8e8e8, #fff)
-
-    > .group
-        margin-bottom: -$u*10 + 3
-
-        +breakpoint(medium)
-            margin-bottom: 0
-
-    .logo, .row
-        float: left
-
-        +breakpoint(medium)
-            float: none
+    background: $c-purple
+    padding: $u*8 0
 
     .logo
         margin: 0 $u*2 0 (-$u*2)
 
-        +breakpoint(medium)
-            margin: auto
-            text-align: center
+    .sign-up
+        display: inline-block
+        text-align: center
+        margin-bottom: 0.5rem
 
-    img
-        +breakpoint(medium)
-            display: block
-            margin: auto
+        > div
+            padding-left: 1.5rem
 
-    .row
-        width: 960px - 270px
-
-        +breakpoint(medium)
-            width: auto
-            padding: $u*2
-            text-align: center
-
-        &.first
-            border-bottom: 2px dotted $c-blue
-            padding: $u*2 0 $u*3
+            &:first-child
+                padding-left: 0
 
     .button-pill
-        +breakpoint(medium)
-            display: inline-block
+        white-space: nowrap
 
     .info
-        color: $c-blue
-        font-size: 28px
-        padding-left: $u*5
+        color: #fff
+        font-size: 16px
+        font-weight: 300
+        margin: 0.25rem 0 0
         text-transform: uppercase
-        font-weight: 700
-
-        +breakpoint(medium)
-            display: block
-            margin-top: $u*2
-
-    .banner
-        background: image('flag.png') no-repeat center right
-        font-weight: 700
-        margin: $u + 3 0 $u*2 + 2
-        padding-left: $u*2
-        min-height: 80px
-        text-transform: uppercase
-
-        +breakpoint(medium)
-            background: none
-            margin: $u 0
-            padding: 0
-
-    .banner-heading, .banner-info
-        margin: 0
 
     .banner-heading
-        color: #ec7e00
-        padding-top: $u*2
-        font-size: 50px
-
-        +breakpoint(medium)
-            font-size: 40px
+        color: #fff
+        font-size: 36px
+        margin: 0
+        text-transform: uppercase
 
         em
-            color: $c-blue
+            color: $c-yellow
             font-style: normal
-
-    .banner-info
-        color: $c-red
-        font-size: 33px
-        margin-top: -$u + 2
-
-        +breakpoint(medium)
-            font-size: 14px
-            margin: 0
