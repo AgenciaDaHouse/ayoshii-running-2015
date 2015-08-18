@@ -35,6 +35,10 @@
 
             <div class="main-content {{#unless isRoot}}inner{{/unless}}">
                 <div class="width-limiter group">
+                    {{#unless isRoot}}
+                        {{> banner-simple }}
+                    {{/unless}}
+
                     {{> banner banner }}
                     {{> body }}
                 </div>
