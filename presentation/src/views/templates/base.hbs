@@ -33,13 +33,21 @@
             {{> header }}
             {{> nav }}
 
+            {{#if isRoot}}
+                <header class="highlight-header">
+                    <div class="width-limiter group">
+                        {{> banner banner }}
+                        {{> banner-50 }}
+                    </div>
+                </header>
+            {{/if}}
+
             <div class="main-content {{#unless isRoot}}inner{{/unless}}">
                 <div class="width-limiter group">
                     {{#unless isRoot}}
                         {{> banner-simple }}
                     {{/unless}}
 
-                    {{> banner banner }}
                     {{> body }}
                 </div>
             </div>
