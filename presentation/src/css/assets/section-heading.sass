@@ -22,8 +22,24 @@
         padding: 0 $u*2
         text-align: center
 
+    &.borderless
+        &:after
+            display: none
+
+    &.arrow
+        &:before
+            +triangle(24px, $c-orange, right)
+            content: ''
+            display: inline-block
+            margin: -6px 3px 0 0
+            vertical-align: middle
+
+    &.large
+        &:after
+            width: 85%
+
     &:after
-        border-top: $b
+        border-top: 2px dotted $c-orange
         content: ''
         position: absolute
         top: 50%
