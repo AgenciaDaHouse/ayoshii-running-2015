@@ -1,6 +1,9 @@
 .figure
     background: #fff
-    padding: $u*2
+    border-radius: $u
+    box-shadow: 0 1px 4px rgba(0,0,0,0.35)
+    padding: $u
+    position: relative
 
     &.shadowed
         box-shadow: 0 2px 6px rgba(0,0,0,0.2)
@@ -9,12 +12,12 @@
         box-shadow: none
 
     .caption
-        color: $c-orange
-        font-size: 22px
-        font-weight: 700
-        padding-top: $u
+        color: #fff
+        font-size: 12px
+        position: absolute
+        bottom: $u*3
+        right: $u*3
         text-transform: uppercase
-        text-align: center
 
     img
         display: block
