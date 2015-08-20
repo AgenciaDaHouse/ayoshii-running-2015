@@ -20,7 +20,7 @@ if ($_GET['endereco']) {
 
 $data .= '<b>Mensagem</b>: ' . nl2br($_GET['mensagem']);
 
-$headers =  "From: contato@corridajovempanlondrina.com.br\r\n";
+$headers =  "From: contato@ayoshiirunning.com.br\r\n";
 $headers .= "Reply-To: contato@capapromo.com.br\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
