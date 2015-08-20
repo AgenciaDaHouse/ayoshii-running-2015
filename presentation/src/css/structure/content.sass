@@ -54,9 +54,12 @@
         text-transform: uppercase
 
     .heading
-        margin: 0 0 $u*6
-        font-size: 26px
+        margin: $u*6 0
+        font-size: 24px
         text-decoration: underline
+
+        &:first-child
+            margin-top: 0
 
         .simple
             font-style: normal
@@ -104,8 +107,9 @@
                 text-decoration: underline
 
     .list
-        font-size: 22px
-        line-height: 1.2em
+        font-size: 18px
+        font-weight: 400
+        line-height: 1.5em
 
         &.spaced
             margin-top: $u*4
