@@ -73,11 +73,14 @@
 
     .text
         font-size: 18px
-        font-weight: 300
-        line-height: 1.4em
+        font-weight: 400
+        line-height: 1.5em
 
         +breakpoint(medium)
             font-size: 16px
+
+        &:first-child
+            margin-top: 0
 
         &:last-child
             margin-bottom: 0
@@ -88,6 +91,10 @@
 
         &.no-margin
             margin-top: 0
+
+        em
+            font-style: normal
+            text-decoration: underline
 
         a
             color: $c-orange
