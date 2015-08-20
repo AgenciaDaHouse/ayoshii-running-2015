@@ -16,18 +16,13 @@
             padding: $u*4 0 0
 
 .percurso
-    .figure
-        $p: -$u*6
-        margin: $p $p $p 0
-
-        +breakpoint(medium)
-            margin: 0 0 $u*4
-
+    .path
         img
-            +breakpoint(medium)
-                display: block
-                width: 100%
-                margin: auto
+            display: block
+            margin: auto
+
+            &.large
+                margin-left: -$u*17
 
 .revesamento, .prova
     .figure
