@@ -2,8 +2,15 @@
     background: $c-purple
     padding: $u*8 0
 
+    +breakpoint(medium)
+        padding: $u*4 0
+        text-align: center
+
     .logo
         margin: 0 $u*2 0 0
+
+        +breakpoint(medium)
+            margin: 0 0 $u*4
 
     .sign-up
         display: inline-block
@@ -12,6 +19,10 @@
 
         > div
             padding-left: 1.5rem
+
+            +breakpoint(medium)
+                margin: $u*2 0
+                padding-left: 0
 
             &:first-child
                 padding-left: 0
@@ -31,6 +42,9 @@
         font-size: 40px
         margin: 0
         text-transform: uppercase
+
+        +breakpoint(medium)
+            margin-top: $u
 
         em
             color: $c-yellow

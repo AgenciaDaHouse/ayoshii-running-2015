@@ -2,6 +2,9 @@
     .content
         margin: $u*6 0
 
+        +breakpoint(medium)
+            margin-bottom: 0
+
         > .g-1-2
             vertical-align: top
 
@@ -21,8 +24,14 @@
             display: block
             margin: auto
 
+            +breakpoint(medium)
+                width: 100%
+
             &.large
                 margin-left: -$u*17
+
+                +breakpoint(medium)
+                    margin-left: 0
 
 .revesamento, .prova
     .figure
@@ -38,9 +47,8 @@
         display: inline-block
         margin-bottom: $u*2
 
-        img
-            +breakpoint(medium)
-                width: 100%
+        +breakpoint(medium)
+            display: none
 
     .event.left
         float: left
@@ -49,6 +57,8 @@
         +breakpoint(medium)
             float: none
             width: 100%
+            display: block
+            margin-bottom: 0
 
     .event.right
         float: right
@@ -56,9 +66,7 @@
         text-align: right
 
         +breakpoint(medium)
-            float: none
-            width: 100%
-            display: block
+            display: none
 
     .event
         margin-bottom: $u*4
@@ -80,13 +88,25 @@
         &.lda
             margin-top: $u*10
 
+            +breakpoint(medium)
+                margin-top: $u*4
+
             .section-subheading
                 margin-bottom: -$u*8
                 text-align: right
 
+                +breakpoint(medium)
+                    margin-bottom: 0
+                    text-align: center
+
         &.mga
             .section-subheading
                 margin-bottom: $u*3
+
+        img
+            +breakpoint(medium)
+                display: block
+                width: 100%
 
     .kit-grid
         margin-top: $u*8

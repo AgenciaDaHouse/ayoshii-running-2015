@@ -4,15 +4,25 @@
     padding: $u
     text-transform: uppercase
 
+    +breakpoint(medium)
+        margin-top: $u*8
+
     .logo
         box-shadow: 0 2px 10px rgba(0,0,0,0.35)
         float: right
         margin: -$u*6 (-$u*6) $u $u*5
 
+        +breakpoint(medium)
+            margin: -$u*6 $u*2 $u $u*2
+            max-width: 40%
+
     .heading,
     .text
         margin: 0
         padding: $u*5
+
+        +breakpoint(medium)
+            padding: $u*3
 
     .heading
         background: #fff

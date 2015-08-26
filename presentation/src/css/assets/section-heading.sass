@@ -10,6 +10,9 @@
     &.double
         margin-bottom: -$u*2
 
+        +breakpoint(medium)
+            margin-bottom: $u*2
+
     +breakpoint(medium)
         text-align: center
         padding: $u*2
@@ -22,7 +25,7 @@
     position: relative
 
     +breakpoint(medium)
-        padding: 0 $u*2
+        padding: 0 $u*2 $u*4
         text-align: center
 
     &.borderless
@@ -37,9 +40,15 @@
             margin: -6px 3px 0 0
             vertical-align: middle
 
+            +breakpoint(medium)
+                display: none
+
     &.large
         &:after
             width: 85%
+
+            +breakpoint(medium)
+                width: 100%
 
     &:after
         border-top: 2px dotted $c-orange
@@ -53,4 +62,4 @@
         +breakpoint(medium)
             width: 100%
             top: auto
-            bottom: -$u
+            bottom: 0
