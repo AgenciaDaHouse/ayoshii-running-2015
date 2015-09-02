@@ -10,6 +10,27 @@ patrocinio:
     -   label: Opção Imóveis
         img: opcao-imoveis.png
 
+    -   label: Raul Fulgêncio
+        img: raul-fulgencio.png
+
 apoio:
     -   label: Bravo
         img: bravo.png
+
+    -   label: Unimed
+        img: unimed.png
+
+    -   label: Natu
+        img: natu.png
+
+    -   label: Filmes do Leste
+        img: filmes-do-leste.png
+
+    -   label: Folha FM
+        img: folha-fm.png
+
+    -   label: Ric TV
+        img: ric-tv.png
+
+    -   label: Unopar
+        img: unopar.png

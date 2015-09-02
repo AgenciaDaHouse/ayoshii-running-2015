@@ -26,31 +26,25 @@
             </div>
         </div>
 
-        <div class="grid">
-            <div class="g-1-2">
-                <h3 class="heading separator">Patrocínio</h3>
+        <h3 class="heading separator">Patrocínio</h3>
 
-                <ul class="row reset-list">
-                    {{#each footer.patrocinio}}
-                    <li class="item">
-                        <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
-                    </li>
-                    {{/each}}
-                </ul>
-            </div>
+        <ul class="row reset-list grid">
+            {{#each footer.patrocinio}}
+            <li class="item g-1-2">
+                <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
+            </li>
+            {{/each}}
+        </ul>
 
-            <div class="g-1-2">
-                <h3 class="heading separator">Apoio</h3>
+        <h3 class="heading separator">Apoio</h3>
 
-                <ul class="row reset-list">
-                    {{#each footer.apoio}}
-                    <li class="item">
-                        <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
-                    </li>
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
+        <ul class="row reset-list grid">
+            {{#each footer.apoio}}
+            <li class="item g-1-4">
+                <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
+            </li>
+            {{/each}}
+        </ul>
     </div>
 
     <p class="copyright"><em>A. YOSHII RUNNING &copy;</em> Todos os direitos reservados</p>
