@@ -143,8 +143,22 @@
             border: 1px solid tint($c-blue, 50)
             padding: $u $u*2
 
+            +breakpoint(medium)
+                padding: $u
+                font-size: 14px
+
         th
             background: tint($c-blue, 85)
 
         td:first-child
             text-align: center
+
+        .small
+            display: none
+
+        +breakpoint(medium)
+            .regular
+                display: none
+
+            .small
+                display: block
