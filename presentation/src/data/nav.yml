@@ -16,7 +16,6 @@ items:
 
     -   label: 'Galeria'
         link: '/galeria.html'
-        unpublished: true
 
     -   label: 'Resultados'
         link: 'http://chipbrasil.com.br/cronomax/g-live.html?f=resultados/2015/bsb.ayoshiilondrina.0410.clax'
