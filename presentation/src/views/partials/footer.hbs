@@ -39,8 +39,14 @@
         <h3 class="heading separator">Apoio</h3>
 
         <ul class="row reset-list grid">
-            {{#each footer.apoio}}
+            {{#each footer.apoioA}}
             <li class="item g-1-4">
+                <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
+            </li>
+            {{/each}}
+
+            {{#each footer.apoioB}}
+            <li class="item g-1-3">
                 <img src="{{ img img 'logos/' }}" alt="{{ label }}" class="{{ ref }}">
             </li>
             {{/each}}

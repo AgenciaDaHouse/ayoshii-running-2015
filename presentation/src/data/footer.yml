@@ -7,18 +7,18 @@ organizadores:
         img: capa.png
 
 patrocinio:
-    -   label: Opção Imóveis
-        img: opcao-imoveis.png
-
     -   label: Raul Fulgêncio
         img: raul-fulgencio.png
 
-apoio:
+    -   label: Opção Imóveis
+        img: opcao-imoveis.png
+
+apoioA:
     -   label: Bravo
         img: bravo.png
 
-    -   label: Unimed
-        img: unimed.png
+    -   label: O Diário
+        img: o-diario.png
 
     -   label: Natu
         img: natu.png
@@ -26,11 +26,12 @@ apoio:
     -   label: Filmes do Leste
         img: filmes-do-leste.png
 
-    -   label: Folha FM
-        img: folha-fm.png
+apoioB:
+    -   label: Massa FM
+        img: massa-fm.png
 
-    -   label: Ric TV
-        img: ric-tv.png
+    -   label: Rede Massa SBT
+        img: rede-massa-sbt.png
 
-    -   label: Unopar
-        img: unopar.png
+    -   label: UniCesumar
+        img: unicesumar.png
